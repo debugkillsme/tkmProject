@@ -42,7 +42,7 @@ public class HeroDaoImpl extends BaseDao implements HeroDao {
 				hero.setHid(rs.getInt(1));
 				hero.setHname(rs.getString("hname"));
 				hero.setHborndate(rs.getDate("hborndate"));
-				hero.setImgpath("imgpath");
+				hero.setImgpath(rs.getString("imgpath"));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

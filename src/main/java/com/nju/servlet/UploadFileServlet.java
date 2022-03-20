@@ -23,10 +23,10 @@ public class UploadFileServlet extends HttpServlet {
 		//传输完成——显示；传输图片重名问题
 		//随机生成字符串解决图片重名问题,再进行特殊字符串处理标记原有文件名
 		String fileName=FileNameUtil.getNewFileName(part.getSubmittedFileName());
-		//指定另一个Tomcat用来存储图片
-		part.write("D:\\Tomcatnew\\webapps\\upload"+"\\"+fileName);
+		//将图片放到Tomcat对应文件夹中
+		part.write("D:\\Tomcat\\webapps\\upload"+"\\"+fileName);
 		//连接数据库，将文件的路径保存到数据库中
-		
+		//在UpdateOrAddHero的servlet中
 		
 	}
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

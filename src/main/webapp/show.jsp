@@ -69,7 +69,8 @@ ${uName}<br>
 		<td>${hero.hid}</td>
 		<td>${hero.hname}</td>
 		<td>${hero.hborndate}</td>
-		<td><img alt="" src="http://localhost:8081/upload/${hero.imgpath}" style="width:100px;height:100px" ></td>
+		<!-- 从服务器调取图像 -->
+		<td><img alt="" src="http://localhost:8080/upload/${hero.imgpath}" style="width:100px;height:100px" ></td>
 		<td><a href="/TKM/GetHeroByHidServlet?hid=${hero.hid}">修改</a></td>
 		<td><a href="/TKM/DelHeroByHidServlet?hid=${hero.hid}" onclick="return confirm('要删除嘛')">删除</a></td>
 	</tr>

@@ -12,7 +12,7 @@
 	大名:<input type="text" name="hname" value="${h.hname}"><br/>
 	生辰:<input type="date" name="hborndate" value="${h.hborndate}"><br/>
 	请选择头像:<input type="file" name="photo">
-	<img alt="显示不了" src="http://localhost:8081/upload/${h.imgpath}" style="width:20px;height:20px">
+	<img alt="显示不了" src="http://localhost:8080/upload/${h.imgpath}" style="width:50px;height:50px">
 	<input type="submit" value="提交">
 	</form>
 

@@ -30,7 +30,7 @@ public class UpdateOrAddHeroByServlet extends HttpServlet {
 		if(part.getSubmittedFileName().length()>0) {
 			//把名字保存到数据库
 			imgPath=FileNameUtil.getNewFileName(part.getSubmittedFileName());
-			part.write("D:\\Tomcatnew\\webapps\\upload"+"\\"+imgPath);
+			part.write("D:\\Tomcat\\webapps\\upload\\"+imgPath);
 		}		
 		SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
 		String hName=request.getParameter("hname");
